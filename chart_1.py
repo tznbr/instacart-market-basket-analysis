@@ -1,3 +1,21 @@
+#  i am working on an Instacart analysis project using pandas and matplotlib.
+
+# I have a CSV file called "final_instacart_pipeline.csv" that already contains a column called:
+# - reorder_type (values: Weekly, Bi-Weekly, Other)
+# - reordered (0 or 1)
+
+# Please generate Python code that:
+
+# 1. Loads the CSV into a dataframe called df
+# 2. Filters the data to only include "Weekly" and "Bi-Weekly"
+# 3. Calculates the average reorder rate for each group
+# 4. Creates a clean, executive-level bar chart comparing Weekly vs Bi-Weekly reorder rates
+# 5. Uses matplotlib only (no seaborn)
+# 6. Includes clear titles, axis labels, and good spacing
+# 7. Keeps the visualization simple and presentation-ready
+
+# Return only clean, runnable Python code.
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mtick
