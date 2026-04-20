@@ -74,3 +74,31 @@ print(count_analysis)
 df.to_csv("final_instacart_pipeline.csv", index=False)
 
 print("\nFinal dataset saved!")
+
+
+# hypothesis testing
+
+import pandas as pd
+from statsmodels.stats.proportion import proportions_ztest
+
+# Filter only Weekly and Bi-Weekly
+weekly = df[df["reorder_type"] == "Weekly"]
+biweekly = df[df["reorder_type"] == "Bi-Weekly"]
+
+# Number of successes (reorders)
+success = [
+    weekly["reordered"].sum(),
+    biweekly["reordered"].sum()
+]
+
+# Total observations
+nobs = [
+    len(weekly),
+    len(biweekly)
+]
+
+# Z-test
+z_stat, p_value = proportions_ztest(success, nobs)
+
+print("Z-statistic:", z_stat)
+print("P-value:", p_value)
