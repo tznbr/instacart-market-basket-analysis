@@ -1,3 +1,40 @@
+# I am working on an Instacart analysis project using pandas and Plotly.
+
+# I have a CSV file called "final_instacart_pipeline.csv" that contains the following columns:
+
+# order_dow (day of week, values 0–6)
+# order_hour_of_day (values 0–23)
+
+# Please generate Python code that:
+
+# Uses pandas and plotly.express (no matplotlib)
+# Defines a function called make_chart_4() that returns a Plotly figure
+# Loads the CSV into a dataframe called df
+# Groups the data by order_dow and order_hour_of_day
+# Calculates the total number of orders for each combination
+# Converts the numeric day of week (0–6) into readable labels:
+# 0 → Sunday
+# 1 → Monday
+# 2 → Tuesday
+# 3 → Wednesday
+# 4 → Thursday
+# 5 → Friday
+# 6 → Saturday
+# Creates a heatmap using plotly.express.density_heatmap:
+# x-axis: order_hour_of_day
+# y-axis: day of week (as readable names)
+# color: order count
+# Uses a clean, professional color scale (e.g., "Blues")
+# Ensures:
+# hours are displayed clearly from 0–23 on the x-axis
+# days are ordered correctly from Sunday to Saturday on the y-axis
+# Applies a clean layout using the "plotly_white" template
+# Includes a clear title and axis labels
+# Sets an appropriate chart height for dashboard display
+# Returns the figure (do not display it and do not create a Dash app)
+
+# Return only clean, runnable Python code.
+
 import pandas as pd
 import plotly.express as px
 
