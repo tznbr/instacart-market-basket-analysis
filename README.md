@@ -28,3 +28,4 @@ This project analyzes customer reorder behavior using the Instacart dataset, foc
 ## Dataset
 The dataset is based on the Instacart Market Basket Analysis dataset from Kaggle.
 Due to size constraints, the dataset is not included in this repository.
+https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset/data
